@@ -11,7 +11,8 @@ this.addEventListener('install', (event) => {
 			'./manifest.json',
 			'./favicon.ico',
 			'./logo192.png',
-			'./static/js/bundle.js',
+			'./static/js/main.*.js',
+			'./static/css/main.*.css',
 			'./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg'
 		])
 	);
