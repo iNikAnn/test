@@ -1,5 +1,5 @@
 async function addToCache(files) {
-	const cache = await window.caches.open('v1');
+	const cache = await caches.open('v1');
 	await cache.addAll(files);
 }
 
@@ -18,7 +18,7 @@ this.addEventListener('install', (event) => {
 });
 
 async function cacheFirst(request) {
-	const res = await window.caches.match(request);
+	const res = await caches.match(request);
 
 	if (res) {
 		return res;
